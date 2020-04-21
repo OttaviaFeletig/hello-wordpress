@@ -6,7 +6,8 @@
  Template:     sydney
  Version:      1.0.0
 */
-.test {
+.footer-position-o {
   position: absolute;
-  top: 200px;
+  top: 656px;
+  width: 100%;
 }

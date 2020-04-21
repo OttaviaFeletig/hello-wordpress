@@ -18,18 +18,7 @@
 	<?php endif; ?>
   
         <a class="go-top"><i class="sydney-svg-icon"><?php sydney_get_svg_icon( 'icon-chevron-up', true ); ?></i></a>
-            <?php 
-    $uri = $_SERVER['REQUEST_URI'];
-    if( is_front_page()) echo '<script type="text/javascript">
-    window.onload = () => {
-         const footer = document.getElementById("colophon");
-        console.log(footer)
-        footer.classList.add("test")
-    }
-       
-    </script>'
-    
-    ?>
+            
         <footer id="colophon" class="site-footer" role="contentinfo">
             <div class="site-info container">
                 <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'sydney' ) ); ?>"><?php printf( __( 'Created by %s', 'sydney' ), 'Ottavia' ); ?></a>
