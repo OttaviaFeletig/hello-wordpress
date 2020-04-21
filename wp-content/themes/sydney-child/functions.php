@@ -9,7 +9,9 @@ function enqueue_parent_and_child_styles() {
    //to add my styles to existing parent style
    wp_enqueue_style('child-theme', get_stylesheet_directory_uri().'/style.css', array($parent_style), wp_get_theme()->get('Version'));
    if(is_front_page()){
-      wp_enqueue_script('script', get_stylesheet_directory_uri().'/js/footer.js', array( 'jquery' ), 1.1, true);
-
+      wp_enqueue_script('footer-script', get_stylesheet_directory_uri().'/js/footer.js', array( 'jquery' ), 1.1, true);
+      // wp_enqueue_script('script', get_stylesheet_directory_uri().'/js/header.js', array( 'jquery' ), 1.1, true);
    }
+   wp_enqueue_script('header-script', get_stylesheet_directory_uri().'/js/header.js', array( 'jquery' ), 1.1, true);
+
 }
