@@ -204,8 +204,10 @@
     if ($(".site-header").length) {
       var headerFix = $(".site-header").offset().top;
       $(window).on("load scroll", function () {
-        console.log("scrolling");
+        // console.log("scrolling");
         var y = $(this).scrollTop();
+        // console.log("headerFix", headerFix);
+        // console.log("y", y);
         if (y >= headerFix) {
           $(".site-header").addClass("fixed");
           $("body").addClass("siteScrolled");
